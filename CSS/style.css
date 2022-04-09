@@ -1,0 +1,144 @@
+@font-face {
+   font-family: 'Roboto Serif', serif;
+   src: url("../Fonts/RobotoSerif-Regular.ttf");
+}
+
+@font-face {
+   font-family: 'Open Sans', sans-serif;
+   src: url("../Fonts/OpenSans-Regular.ttf");
+}
+
+*{
+   box-sizing:border-box;
+   font-family: 'Open Sans', sans-serif;
+   
+}
+
+body{
+   background:url('../Image/CAM01_BIG_TREE1.jpg') no-repeat;
+   background-size:cover;
+}
+
+
+.container{
+   width: 100%;
+   max-width: 1230px;
+   margin: 0 auto;
+}
+
+.wrapper{
+   display: flex;
+   flex-direction: column;
+}
+
+/* header */
+
+header{
+   display: block;
+}
+
+.container__header{
+   padding: 10px;
+   border:3px double gray;
+   border-radius:7px;
+   display: flex;
+   justify-content: center;
+   background-color:rgb(238, 230, 220);
+}
+
+.header-link{
+   font-family: 'Roboto Serif', serif;
+   font-size: 16px;
+   margin: 10px 30px 10px 0;
+}
+
+.link{
+   color:black;
+   transition: all 1s;
+   text-decoration: none;
+}
+
+
+a:hover{
+   color:rgba(4, 153, 240, 0.699);
+   text-decoration: underline;
+   transition: all .5s;
+}
+
+/* main */
+
+main{
+   min-height: 100vh;
+}
+
+.about_column{
+   display: flex;
+}
+
+.title{
+   font-family: 'Roboto Serif', serif;
+   color:gray;
+   text-align: center;
+   margin: 40px auto 40px;
+}
+
+.img_wrapper{
+   display: block;
+   text-align: center;
+   margin-right: 30px;
+}
+
+img{
+   transition: all .5s;
+}
+
+.img_wrapper img:hover{
+   box-shadow: 4px 4px 52px 0px rgba(34, 60, 80, 0.5);
+   transition: all .5s;
+   transform: scale(1.02);
+}
+
+.subtitle{
+   font-family: 'Roboto Serif', serif;
+   color:gray;
+   margin: 10px auto;
+   padding-left: 15px;
+   border-left:4px solid rgba(206, 158, 96, 0.699);
+}
+
+.social-media{
+   max-width: 100%;
+   display: flex;
+   justify-content: flex-start;
+}
+
+.social-item{
+   margin-right: 15px;
+   transition: all .5s;
+}
+
+.social-item:hover{
+   transform: scale(1.2);
+   transition: all .5s;
+}
+
+.contact-tel, .contact-mail{
+   color:black;
+   text-decoration: none;
+   margin-left: 10px;
+}
+
+/* footer */
+
+footer{
+   flex: 1 1 auto;
+}
+
+.container__footer{
+   padding:0 10px;
+   border:3px double gray;
+   border-radius:7px;
+   text-align: center;
+   background-color:rgb(238, 230, 220);
+}
+
